@@ -1,0 +1,6 @@
+/*{{ HTML::style( asset('//fonts.googleapis.com/css?family=Raleway:400,300,600') ) }}
+
+{{ HTML::style( asset('css/custom.css') ) }}
+{{ HTML::style( asset('css/skeleton.css') ) }}
+{{ HTML::style( asset('css/normalize.css') ) }}
+*/

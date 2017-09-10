@@ -1,0 +1,7 @@
+.faq > .question{
+    color: #1b6d85;
+    cursor: pointer;
+}
+.faq > .question:hover{
+    color: #1EAEDB;
+}
