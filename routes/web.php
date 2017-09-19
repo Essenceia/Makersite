@@ -55,4 +55,5 @@ Route::resource('points_default','DefaultPoints');
 Route::resource('parse_project','ParseProjectController');
 
 Route::resource('mail', 'EmailController');
+Route::resource('machine_special_event', 'SpecialMachineCalanderEvent');
 Route::resource('validate_registration', 'UserRegistrationRequest');

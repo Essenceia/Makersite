@@ -50,17 +50,19 @@ class DefaultMachineCalander extends Controller
     {
         //
     }
-    function create_calander_for_machine($machine_id){
+
+    function create_special_calander_for_machine($machine_id,$event_id){
         $max_date = date_create('18:00:00');
         $time_interval = date_interval_create_from_date_string("30 minutes");
         for($day = 0 ; $day < 5 ; $day++){
             $time =date_create('8:00:00');
             while ($time < $max_date){
-                DB::table('machine_calander_default')->insert([
+                DB::table('machine_calander_special')->insert([
                     'open'=>false,
                     'time'=>date_format($time,'H:i:s'),
                     'day'=>$day,
                     'machine_id'=>$machine_id,
+                    'event_id'=>$event_id,
                 ]);
                 date_add($time,$time_interval);
             }
@@ -78,7 +80,7 @@ class DefaultMachineCalander extends Controller
         //check to see if a calander already exists if not create it
         $exists = DB::table('machine_calander_default')->where('machine_id','=',$id)->where('day','=',0)->count();
         if($exists===0){
-$this->create_calander_for_machine($id);
+            $this->create_calander_for_machine($id);
         }
         $time =date_create('08:00:00');
         $max_time =date_create('18:00:00');
@@ -95,7 +97,7 @@ $this->create_calander_for_machine($id);
             $i++;
             date_add($time,$time_interval);
         }
-        return view('admin.panel')->with('elem',$req)->with('component','calanderdefault')->with('data',$id);
+        return view('admin.panel')->with('elem',$req)->with('component','calander')->with('data',$id);
     }
 
     /**

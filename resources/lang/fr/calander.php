@@ -22,5 +22,18 @@ return[
     'validres'=>"Valider la reservation",
     'date'=>"Date",
     'verified'=>"J'ai fait une estimation du temps necessaire",
+    'specialeventname'=>"Evennement special",
+    'listspecialevent'=>"List des evenements pour cree des calendrier de machine special",
+    'eventname'=>"Nom de l'evenement",
+    'eventdesc'=>"Description de l'evenement",
+    "startweekdate"=>"Lundi de la semaine concerner",
+    'specialevent'=>"Calandrier pour des evenements speciaux",
+    'calanderinstruction'=>"Cocher une case pour ouvrir un creneau, sinon le creneaux sera indisponnible.",
+    'startcalanderdate'=>"Semaine d'application de ce calandrier",
+    'adddate'=>"Ajouter une date",
+    'dateformaterr'=>"Erreur dans le format de la date.",
+
+
+
 
 ];

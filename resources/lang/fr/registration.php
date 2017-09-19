@@ -21,4 +21,7 @@ return[
     'mailregistrationcontent2'=>"a l'adresse suivante :",
     'mailgotosite'=>"Liens vers la suite de l'instription",
     'userregistrationerr'=>"Une erreur est surveus lors de votre procedure de login. Normallement votre compte a etait cree mais si vous n'arriver pas a vous connecter veuillez contacter un administrateur.",
+    'mailaccountcreatedforprojecttitle'=>"Votre acces pour le site du FabLab",
+    'mailaccountcreatedforprojectsection1'=>"Bonjours, afin de vous permettre d'utiliser le FabLab dans le cadre de votre projet un compte a etait cree a votre nom. Sur le site vous trouverez des explications sur le fonctionnement du FabLab et la possibiliter de reserver les machines. Attention : certaines machines demande des credits d'utilisation. Vous pouvez obtenir ces credit en les incluants dans votres bon de commande. Rensignez vous sur les machines conserner et soyez prevoyant afin de ne pas limiter votre acces au materiel. De plus, vous trouverez ci-dessous vos identifiants, merci de conserver ce mail afin d'eviter la perte de vos codes d'identifations.",
+    "mailaccountcreatedforprojectsection2"=>"Nous avons hate de te voire bientot au FabLab.",
 ];

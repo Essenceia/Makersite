@@ -84,6 +84,11 @@
                     {{Form::token()}}
                     {{ Form::submit((__('reservation.resalist')), array('class' => 'button-primary u-full-width')) }}
                     {!! Form::close() !!}</div> </div>
+            <!-- special calander -->
+            @component('admin.component.2buttoncreateedit')
+                @slot('title',(__('calander.specialevent')))
+                @slot('routename','machine_special_event')
+            @endcomponent
         @endif
 
     @endif

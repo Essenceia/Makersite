@@ -16,7 +16,7 @@ return[
     'pointsnotrequired'=>"Si le nombre de points attribuer reste a 0 il sera automatiquement mise",
     'userid'=>"Identifiant du chef de project",
     'parseprojectinfo'=>"Cette interface permet de cree en une fois tout les projets referencer dans une table exel. Avant de commender veuillez ordonner les collones de donnes dans l'ordre suivant: 
-    identifiant du projet, ex : PSTE102 ou PFE101 ; 
+    identifiant du projet contenant le type et le numros separer par un '_', ex : PSTE_102 ou PFE_101 ; 
     nom du projet ;
      description du projet ;
       email du chef de projet. Attention, si l'email du chef de projet n'est pas de la forme 'xxxx@edu.ece.fr' il sera impossible de le relier a un compte utilisteur. Pour l'utiliser allez dans votre tableau exel ou google spreadsheat et exporter le en '.tsv'. ",
