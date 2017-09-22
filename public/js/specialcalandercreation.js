@@ -15,13 +15,14 @@ $(document).ready(function(){
     }
     $("#adddate").click(function(){
         var inputdate = $("#newadddate").val();
-        var regex_date = /^\d{4}\-\d{1,2}\-\d{1,2}$/;
+        var regex_date = /^\d{4}-\d{1,2}-\d{1,2}$/;
 
-        if(!regex_date.test(inputdate))
+        if(regex_date.test(inputdate) ===true)
         {
-            alert("'"+__('calander.dateformaterr')+"'");
+            alert("Date format error");
         }else{
             //add to table
+            alert("Date valide");
             var id=getlastid();//todo find latest id
             var toappend = "<th><label for='date["+id+"].selected' class='control-label'>"+inputdate+"</label></th><td><input checked='checked' name=date["+id+"].selected' value='0' id=date["+id+"].selected' type='checkbox'></td>";
 

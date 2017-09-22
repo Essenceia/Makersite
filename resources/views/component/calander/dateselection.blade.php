@@ -23,5 +23,5 @@
     @endif
 </table>
 <input type="datetime" name="newadddate" value="{{date("Y-m-d")}}">
-<button class="button-primary" id="adddate">{{__('calander.adddate')}}</button>
+<input type="button" class="button-primary" id="adddate" value="{{__('calander.adddate')}}" >
 <!-- option to add new dates -->
